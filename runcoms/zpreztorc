@@ -35,6 +35,7 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'gpg' \
+  'git' \
   'completion' \
   'git' \
   'syntax-highlighting' \
