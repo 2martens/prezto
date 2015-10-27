@@ -9,3 +9,7 @@
 if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
+
+export homeserverMAC='14:DD:A9:4E:18:68'
+export SSH_AUTH_SOCK=0
+export mediaMount='mount -t cifs //homeserver/media -o username=sambamedia /mnt/centos/media'
