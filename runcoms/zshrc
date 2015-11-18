@@ -10,6 +10,11 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+if [ -z "$SSH_AUTH_SOCK" ] ; then
+  eval `ssh-agent -s`
+  ssh-add
+fi
+
 # Customize to your needs...
 # source alias definitions
 if [[ -s "${ZDOTDIR:-$HOME}/.alias.zsh" ]]; then
