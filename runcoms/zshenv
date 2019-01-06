@@ -14,3 +14,6 @@ export homeserverMAC='14:DD:A9:4E:18:68'
 export SSH_AUTH_SOCK=0
 export mediaMount='sudo mount -t cifs //192.168.178.10/media -o username=sambamedia /mnt/centos/media'
 export highendpcMount='sudo mount -t cifs //192.168.178.10/highendpc -o username=sambamedia /mnt/centos/highendpc'
+export backupMount='sudo sshfs -o allow_other,IdentityFile=/home/jim/.ssh/id_ed25519 2martens@192.168.178.10:/cryptbackup/devices /mnt/centos/backup'
+
+
