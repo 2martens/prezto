@@ -20,6 +20,10 @@ if [[ -s "${ZDOTDIR:-$HOME}/.alias.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.alias.zsh"
 fi
 
+if [[ -s "${ZDOTDIR:-$HOME}/bin/functions.sh" ]]; then
+  source "${ZDOTDIR:-$HOME}/bin/functions.sh"
+fi
+
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # added by travis gem
