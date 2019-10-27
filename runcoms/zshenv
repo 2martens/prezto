@@ -19,4 +19,3 @@ export highendpcMount='sudo mount -t cifs //192.168.178.10/highendpc -o username
 export backupMount='sudo sshfs -o allow_other,IdentityFile=/home/jim/.ssh/id_ed25519 2martens@192.168.178.10:/cryptbackup/devices/$device /mnt/centos/backup'
 export timeshiftMount='sudo sshfs -o allow_other,IdentityFile=/home/jim/.ssh/id_ed25519 2martens@192.168.178.10:/cryptbackup/devices/$device /timeshift'
 
-

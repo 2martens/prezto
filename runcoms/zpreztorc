@@ -35,9 +35,8 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'gpg' \
-  'git' \
-  'gpg' \
   'completion' \
+  'git' \
   'syntax-highlighting' \
   'history-substring-search' \
   'ssh' \
