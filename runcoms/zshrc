@@ -12,11 +12,17 @@ fi
 
 SSH_AUTH_SOCK=~/.ssh/ssh-agent.sock; export SSH_AUTH_SOCK;
 ssh-add -l 2>/dev/null >/dev/null
-
-if [ $? -ge 2 ]; then
-  ssh-agent -a "$SSH_AUTH_SOCK" > /dev/null
-  ssh-add
-fi
+case $? in
+  0)
+    ;;
+  1)
+    ssh-add
+    ;;
+  2)
+    ssh-agent -a "$SSH_AUTH_SOCK" > /dev/null
+    ssh-add
+    ;;
+esac
 
 # Customize to your needs...
 # source alias definitions
