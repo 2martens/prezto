@@ -19,6 +19,7 @@ case $? in
     ssh-add
     ;;
   2)
+    rm --force "$SSH_AUTH_SOCK"
     ssh-agent -a "$SSH_AUTH_SOCK" > /dev/null
     ssh-add
     ;;
