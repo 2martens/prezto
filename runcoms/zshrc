@@ -36,6 +36,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/bin/functions.sh" ]]; then
 fi
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$PATH:$HOME/.local/bin" # Add .local bin to PATH
 
 # added by travis gem
 [ -f /home/jim/.travis/travis.sh ] && source /home/jim/.travis/travis.sh
