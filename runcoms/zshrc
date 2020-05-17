@@ -37,6 +37,7 @@ fi
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="$PATH:$HOME/.local/bin" # Add .local bin to PATH
+export PATH="$(yarn global bin):$PATH" # Add yarn binary location to path
 
 # added by travis gem
 [ -f /home/jim/.travis/travis.sh ] && source /home/jim/.travis/travis.sh
